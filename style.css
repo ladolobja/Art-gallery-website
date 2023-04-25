@@ -238,7 +238,7 @@ h5 {
     color: #FFFFFF;
 }
 
-.return-button {
+.returnbutton {
     width: 56px;
     height: 72px;
     background-color: #D5966C;
@@ -370,20 +370,14 @@ h5 {
         display: none;
     }
 
-    .blackkk:hover {
+    a:hover .blackkk {
         background-color: #D5966C;
+        transition:1500ms;
     }
 
-    .blackkk:hover~.golden {
+    a:hover .golden {
         background-color: #151515;
-    }
-
-    .golden:hover {
-        background-color: #151515;
-    }
-
-    .golden:hover~.blackkk {
-        background-color: red;
+        transition:1500ms;
     }
 
     .hero {
@@ -512,6 +506,23 @@ h5 {
     }
 
     /* location */
+
+
+    .flex-div {
+        cursor: pointer;
+    }
+
+    .flex-div:hover .blackDV {
+        background-color: #D5966C;
+        transition:1500ms;
+
+    }
+
+    .flex-div:hover .returnbutton {
+        background-color: #151515;
+        transition:1500ms;
+
+    }
 
     .next-page {
         overflow-x: hidden;
@@ -755,6 +766,15 @@ h5 {
         width: 15%;
     }
 
+    .black-icons,.icons{
+        cursor: pointer;
+    }
+
+    svg:hover path{
+        fill: #D5966C;
+        transition: 1000ms;
+    }
+
     /* location */
 
     .next-page {
@@ -822,4 +842,9 @@ h5 {
         font-size: 18px;
         line-height: 28px;
     }
+
+   .black-icons svg:hover path{
+    fill: #FFFFFF;
+    transition: 1000ms;
+}
 }
